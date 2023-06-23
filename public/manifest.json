@@ -1,19 +1,19 @@
 {
   "short_name": "Manager IOT",
-  "name": "GIÁM SÁT HỒ NUÔI TÔM",
+  "name": "GIÁM SÁT LŨ LỤT",
   "icons": [
     {
-      "src": "logo.jpeg",
+      "src": "logo-lulut.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo.jpeg",
+      "src": "logo-lulut.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo.jpeg",
+      "src": "logo-lulut.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }
