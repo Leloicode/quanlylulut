@@ -688,6 +688,7 @@ strong {
   .not-internet img{
     width: 100%;
   }
+
   .App{
     width: 100%;
     background-color: #f1f7f3;
@@ -719,6 +720,39 @@ strong {
     height: auto;
     display: block;
   }
+  .sidebar .title-sidebar{
+    display: none;
+  }
+  .sidebar.visible .title-sidebar{
+    display: block;
+  }
+  .sidebar .action{
+    display: block;
+  }
+  .sidebar.visible .action{
+    display: block;
+  }
+  .sidebar .action-mesage{
+    width: auto;
+  }
+  .sidebar.visible .action-mesage{
+    width: auto;
+  }
+  .sidebar .survivalmode{
+    display: block;
+  }
+  .sidebar.visible .survivalmode{
+    display: block;
+  }
+  .sidebar .notification{
+    display: block;
+  }
+  .sidebar.visible .notification{
+    display: block;
+  }
+  .sidebar.visible{
+    width: 100%;
+  }
   .sidebar{
     background: #fff;
     width: 100%;
@@ -728,6 +762,7 @@ strong {
     background: none;
     background-color: var(--background-primary);
   }
+  
   .title-sidebar{
     display: none;
   }
@@ -824,6 +859,39 @@ strong {
   .App .body{
     height: auto;
     display: block;
+  }
+  .sidebar .title-sidebar{
+    display: none;
+  }
+  .sidebar.visible .title-sidebar{
+    display: block;
+  }
+  .sidebar .action{
+    display: block;
+  }
+  .sidebar.visible .action{
+    display: block;
+  }
+  .sidebar .action-mesage{
+    width: auto;
+  }
+  .sidebar.visible .action-mesage{
+    width: auto;
+  }
+  .sidebar .survivalmode{
+    display: block;
+  }
+  .sidebar.visible .survivalmode{
+    display: block;
+  }
+  .sidebar .notification{
+    display: block;
+  }
+  .sidebar.visible .notification{
+    display: block;
+  }
+  .sidebar.visible{
+    width: 100%;
   }
   .sidebar{
     background: #fff;
