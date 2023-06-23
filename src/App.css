@@ -724,7 +724,7 @@ strong {
     display: none;
   }
   .sidebar.visible .title-sidebar{
-    display: block;
+    display: none;
   }
   .sidebar .action{
     display: block;
@@ -864,7 +864,7 @@ strong {
     display: none;
   }
   .sidebar.visible .title-sidebar{
-    display: block;
+    display: none;
   }
   .sidebar .action{
     display: block;
