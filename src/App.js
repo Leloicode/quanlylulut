@@ -69,7 +69,8 @@ function App() {
       setTocdodongchay(data.Data.FlowSpeed);
       setLuuluongdongchat(data.Data.FlowRate);
       settongluuluongnuoc(data.Data.OutputLiquidQuantity);
-      setCanhbao(data.CANHBAO.Den);
+      setCanhbao(data.CANHBAO);
+    
     });
     return () => {
       off(dbRef);
@@ -199,6 +200,7 @@ function App() {
                 {/* eslint-disable-next-line */}
                 <marquee className="message" scrollamount="12"><h3>{status === 1 ? "Hiện tại đang ở chế độ tự động cảnh báo" : 'Hiện tại đang ở chế độ thủ công'}</h3></marquee>
               </div>
+              {status === 1 &&
               <div className='notification'>
                 {
                   canhbao === 0 ?
@@ -213,6 +215,7 @@ function App() {
                     
                 }
               </div>
+              }
             </div>
             <div className="content">
               <label className="burger" htmlFor="burger">
