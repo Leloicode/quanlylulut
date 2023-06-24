@@ -100,7 +100,15 @@ function App() {
         .catch((error) => {
           console.error('Lỗi khi cập nhật giá trị Mode:', error);
         });
-      setStatus(1); // Mode = 1
+        set(ref(database, '/device'), 0)
+        .then(() => {
+          console.log('Giá trị Device2 đã được cập nhật thành ' + 0);
+        })
+        .catch((error) => {
+          console.error('Lỗi khi cập nhật giá trị Device:', error);
+        });
+        setDevice(0);
+        setStatus(1); // Mode = 1
     }
 
   }
@@ -164,7 +172,7 @@ function App() {
               <div className="survivalmode">
                 {/* <h2>Chế độ</h2> */}
                 <button className="btn" type="button" onClick={handleCLickStatus}>
-                  <strong>{status === 0 ? 'Tự động' : 'Thủ công'}</strong>
+                  <strong>{status === 0 ?  'Thủ công' : 'Tự động'}</strong>
                   <div id="container-stars">
                     <div id="stars"></div>
                   </div>
@@ -176,7 +184,7 @@ function App() {
                 </button>
               </div>
 
-              {status !== 1 &&
+              {status !== 0 &&
                 <div className='action'>
                   <div className="card">
                     <div className="card2">
@@ -198,9 +206,9 @@ function App() {
               }
               <div className='action-mesage'>
                 {/* eslint-disable-next-line */}
-                <marquee className="message" scrollamount="12"><h3>{status === 1 ? "Hiện tại đang ở chế độ tự động cảnh báo" : 'Hiện tại đang ở chế độ thủ công'}</h3></marquee>
+                <marquee className="message" scrollamount="12"><h3>{status === 1 ?'Hiện tại đang ở chế độ thủ công' :  "Hiện tại đang ở chế độ tự động cảnh báo"}</h3></marquee>
               </div>
-              {status === 1 &&
+              {status === 0 &&
               <div className='notification'>
                 {
                   canhbao === 0 ?
